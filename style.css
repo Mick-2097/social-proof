@@ -1,0 +1,175 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/* mobile */
+body {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+.intro {
+    margin: 4rem auto 0 auto;
+    text-align: center;
+    width: 320px;
+    color: var(--Very-Dark-Magenta);
+
+}
+h1 {
+    margin: auto;
+    width: 80%;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.9;
+}
+.intro p {
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 2rem auto;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    width: 310px;
+    margin: 2.5rem auto;
+}
+li {
+    background: var(--Light-Grayish-Magenta);
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    font-size: 15px;
+}
+li p {
+    width: 93px;
+    height: 16px;
+    background-image: url(icon-star.svg);
+    background-repeat: space;
+    margin: 0.5rem auto;
+}
+.feedback {
+    width: 310px;
+    background: var(--Very-Dark-Magenta);
+    color: var(--Light-Grayish-Magenta);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+}
+.name {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+.picture {
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 50%;
+    height: 2.5rem;
+}
+span {
+    color: var(--Soft-Pink);
+    font-weight: 500;
+}
+.feedback p {
+    width: 85%;
+    margin: 1rem auto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+
+}
+footer {
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    bottom: 0;
+}
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+/* desktop */
+@media (min-width: 1080px) {
+    main {
+        width: 80%;
+    }
+    .breakpoint-top,
+    .breakpoint-bottom {
+        display: flex;
+        width: 100%;
+    }
+    .breakpoint-top {
+        height: 50vh;
+    }
+    .intro {
+        text-align: left;
+        width: 400px;
+        margin: 10rem auto 1rem 2rem;
+    }
+    h1 {
+        width: 100%;
+        font-size: 53px;
+    }
+    .intro p {
+        margin: 1rem auto;
+    }
+    ul {
+        margin: 10rem auto 1rem auto;
+    }
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: max-content;
+        padding: 1rem 3.5rem;
+    }
+    li p {
+        margin-right: 2rem;
+    }
+    li:nth-of-type(1) {
+        transform: translateX(-20%);
+    }
+    li:nth-of-type(2) {
+        transform: translateX(-10%);
+    }
+    .breakpoint-bottom {
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .feedback {
+        margin: 0;
+    }
+    .feedback:nth-of-type(2) {
+        transform: translateY(1rem);
+    }
+    .feedback:nth-of-type(3) {
+        transform: translateY(2rem);
+    }
+}
